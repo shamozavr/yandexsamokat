@@ -6,8 +6,6 @@ const slidesCount = document.querySelectorAll('.events__list-item').length;
 
 prevButton.style.opacity = 0.5;
 
-console.log(slidesCount);
-
 let countStart = 1;
 
 nextButton.addEventListener('click', () => {
@@ -26,7 +24,6 @@ nextButton.addEventListener('click', () => {
         nextButton.style.opacity = 0.5;
         nextButton.disabled = true;
     }
-    console.log(countStart);
 });
 
 prevButton.addEventListener('click', () => {
@@ -44,5 +41,4 @@ prevButton.addEventListener('click', () => {
         nextButton.style.opacity = 1;
         nextButton.disabled = false;
     }
-    console.log(countStart);
 });
